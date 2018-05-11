@@ -54,7 +54,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_name = holiday.to_s.capitalize
       end
         if supplies.length == 1
-          supply_list = "#{supplies}"
+          supply_list = "#{supplies[0]}"
         else
           supply_list = "#{supplies[0]}, #{supplies[1]}"
         end
