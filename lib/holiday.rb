@@ -53,12 +53,12 @@ def all_supplies_in_holidays(holiday_hash)
       else
         holiday_name = holiday.to_s.capitalize
       end
-      puts "  #{holiday_name}: " +
         if supplies.length == 1
-          puts "#{supplies}"
+          supply_list = "#{supplies}"
         else
-          puts "#{supplies[0]}, #{supplies[1]}"
+          supply_list = "#{supplies[0]}, #{supplies[1]}"
         end
+      puts "  #{holiday_name}: #{supply_list}"
     end
   end
 end
